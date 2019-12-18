@@ -1,4 +1,5 @@
 USE codeup_test_db;
+TRUNCATE albums;
 INSERT INTO albums (artist_name, record_name, release_date, genre, sales)
 VALUES ('Michael Jackson', 'Thriller', 1982 , 'Pop, rock, R&B', 47.3),
 ('Eagles', 'Their Greatest Hits (1971 - 1975)', 1976 , 'Country rock, soft rock, folk rock', 41.2),
@@ -24,7 +25,7 @@ VALUES ('Michael Jackson', 'Thriller', 1982 , 'Pop, rock, R&B', 47.3),
 ('Pink Floyd', 'The Wall', 1979 , 'Progressive rock', 18.7),
 ('The Beatles', 'Sgt. Pepper''s Lonely Hearts Club Band', 1967 , 'Rock', 18.2),
 ('James Horner', 'Titanic: Music from the Motion Picture', 1997 , 'Film score', 18.1),
-('Various artists', 'Dirty Dancing', 1987 , 'Pop, rock, R&B', 17.9);
+('Various artists', 'Dirty Dancing', 1987 , 'Pop, rock, R&B', 17.9),
 ('Dire Straits', 'Brothers in Arms', 1985 , 'Roots rock, blues, rock, soft rock', 17.7),
 ('Nirvana', 'Nevermind', 1991 , 'Grunge, alternative rock', 16.7),
 ('Michael Jackson', 'Dangerous', 1991 , 'Rock, funk, pop', 17.3),

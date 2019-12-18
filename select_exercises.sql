@@ -11,12 +11,3 @@ SELECT 'These albums had less than 20 million certified sales';
 SELECT * from albums WHERE sales <20;
 SELECT 'All rock genre albums';
 SELECT * from albums WHERE genre = "Rock";
-
-
-
--- The year Sgt. Pepper's Lonely Hearts Club Band was released
--- The genre for Nevermind
--- Which albums were released in the 1990s
--- Which albums had less than 20 million certified sales
--- All the albums with a genre of "Rock". Why do these query results
--- not include albums with a genre of "Hard rock" or "Progressive rock"?
