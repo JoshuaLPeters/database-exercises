@@ -1,10 +1,18 @@
 USE stock_database;
 
+-- For a given ad, what is the email address of the user that created it?
+
 SELECT email FROM stocks WHERE ad LIKE 'Domtar Corporation';
+
+-- For a given ad, what category, or categories, does it belong to?
 
 SELECT category FROM stocks WHERE ad LIKE 'Domtar Corporation';
 
+-- For a given category, show all the ads that are in that category.
+
 SELECT ad FROM stocks WHERE category LIKE 'banks';
+
+-- For a given user, show all the ads they have posted.
 
 INSERT INTO stocks(username, email, ad, category)
 VALUES('pvint12', 'bfairbrother12@dagondesign.com', 'Test Ad Two', 'Test Category Two');
@@ -12,18 +20,10 @@ VALUES('pvint12', 'bfairbrother12@dagondesign.com', 'Test Ad Two', 'Test Categor
 INSERT INTO stocks(username, email, ad, category)
 VALUES('pvint12', 'bfairbrother12@dagondesign.com', 'Test Ad Three', 'Test Category Three');
 
-SELECT ad FROM stocks WHERE username LIKE 'pvint12'; /* ORGIN LINE 40 */
-/* pvint12	bfairbrother12@dagondesign.com	Ladder Capital Corp	Real Estate Investment Trusts */
+SELECT ad FROM stocks WHERE username LIKE 'pvint12';
 
 
 
 
 
 
-
--- Write SQL queries to answer the following questions:
---
--- For a given ad, what is the email address of the user that created it?
--- For a given ad, what category, or categories, does it belong to?
--- For a given category, show all the ads that are in that category.
--- For a given user, show all the ads they have posted.
