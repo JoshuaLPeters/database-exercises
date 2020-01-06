@@ -1,0 +1,25 @@
+USE stock_database;
+
+SELECT email FROM stocks WHERE ad LIKE 'Domtar Corporation';
+
+SELECT category FROM stocks WHERE ad LIKE 'Domtar Corporation';
+
+SELECT ad FROM stocks WHERE category LIKE 'banks';
+
+
+
+SELECT ad FROM stocks WHERE username LIKE 'pvint12'; /* ORGIN LINE 40 */
+/* pvint12	bfairbrother12@dagondesign.com	Ladder Capital Corp	Real Estate Investment Trusts */
+
+
+
+
+
+
+
+-- Write SQL queries to answer the following questions:
+--
+-- For a given ad, what is the email address of the user that created it?
+-- For a given ad, what category, or categories, does it belong to?
+-- For a given category, show all the ads that are in that category.
+-- For a given user, show all the ads they have posted.
