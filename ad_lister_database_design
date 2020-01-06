@@ -6,7 +6,11 @@ SELECT category FROM stocks WHERE ad LIKE 'Domtar Corporation';
 
 SELECT ad FROM stocks WHERE category LIKE 'banks';
 
+INSERT INTO stocks(username, email, ad, category)
+VALUES('pvint12', 'bfairbrother12@dagondesign.com', 'Test Ad Two', 'Test Category Two');
 
+INSERT INTO stocks(username, email, ad, category)
+VALUES('pvint12', 'bfairbrother12@dagondesign.com', 'Test Ad Three', 'Test Category Three');
 
 SELECT ad FROM stocks WHERE username LIKE 'pvint12'; /* ORGIN LINE 40 */
 /* pvint12	bfairbrother12@dagondesign.com	Ladder Capital Corp	Real Estate Investment Trusts */
